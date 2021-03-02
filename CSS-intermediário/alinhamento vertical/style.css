@@ -1,0 +1,32 @@
+.card{
+    width: 370px;
+    height: 200px;
+    float: left;
+    border: 2px solid green;
+    text-align: center;
+    position: relative;
+}
+
+.conteudo-1{
+    background-color: indigo;
+    line-height: 200px;
+}
+
+.conteudo-2{
+    background-color: lightcoral;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+.card2{
+    clear: left;
+    float: left;
+    border: 2px solid green;
+    
+}
+
+    

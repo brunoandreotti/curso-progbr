@@ -1,0 +1,17 @@
+.link{
+    text-decoration: none;
+    color: red;
+    background:white;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    border: 3px solid
+    
+}
+
+.link:hover{
+    color: white;
+    background: red;
+    border: 3px solid red;
+}

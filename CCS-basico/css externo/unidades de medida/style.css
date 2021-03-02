@@ -1,0 +1,89 @@
+#principal{
+    color: red;
+    background-image: url(imagens/paisagemcampo300px.jpg);
+    background-attachment: scroll;
+}
+
+#título-principal{
+    color: blue;
+}
+
+.texto-verde{
+    color: green;
+}
+
+#parágrafos{
+    background-image: url(imagens/galaxia-fundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulos{
+    color: white;
+}
+/*Unidades de medida fixas*/
+#cm{
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+
+#mm{
+    background-color: red;
+    width: 1mm;
+    height: 1mm;
+}
+#in{
+    background-color: blue;
+    width: 1in;
+    height: 1in;
+}
+
+#px{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+#px{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+#pt{
+    background-color: blue;
+    width: 12pt;
+    height: 12pt;
+}
+
+#pc{
+    background-color: red;
+    width: 1pc;
+    height: 1pc;
+}
+
+/*Unidades de medida relativas*/
+/*EM/REM*/
+.containerEM{
+    width: 300px;
+    font-size: 25px;
+    
+    background-color: green;
+
+}
+.insideEM{
+    font-size: 2em;
+    width: 2em;
+    background-color: grey;
+}/*Apesar de ter utilizado o 2em no width, a medida "pai" ainda continua sendo o fonte-size do container (25px), no caso o width do inside tem 50px, se substituir o 2em do inside por 50px não haverá mudança nenhuma*/
+
+/*VW*/
+.containerVW{
+    width: 50vw;
+    background-color: red;
+}
+.insideVW{
+    width: 100px;
+    background-color: blue;
+}

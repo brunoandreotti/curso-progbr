@@ -1,0 +1,48 @@
+body{
+    background-color: grey;
+}
+
+.cartao{
+    width: 400px;
+    height: 200px;
+    background-image: url(imagens/backgorund.png);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    padding-left: 30px;
+    margin: auto;
+}
+
+#titulocartao{
+    font-family: 'Bad Script', cursive;
+    margin-bottom: 0;
+}
+
+#redessociais{
+    margin: 0;
+    padding-left: 30px;
+    
+}
+
+#instagram{
+    list-style-image: url(imagens/Insta.png);
+    font-family:'Bad Script', cursive;
+}
+#facebook{
+    list-style-image: url(imagens/facebook.png);
+    font-family:'Bad Script', cursive;
+}
+#github{
+    list-style-image: url(imagens/github.png);
+    font-family:'Bad Script', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}

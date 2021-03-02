@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Display</title>
+</head>
+<body>
+    
+    <div>Essa é uma div normal</div>
+    <div style="background-color: blue;">
+        E aqui temos <div style="background-color: red; width: 300px; height: 50px">uma div dentro da div</div> diferente da de cima
+    </div>
+    <!-- Como dá para perceber, a tag div ocupa a linha toda (podendo ser ajustado o a largura e a altura) e não somente onde está o conteúdo pois é um display:block -->
+
+    <div>
+        <p>Esse é um parágrafo normal</p>
+        <p>E esse também</p>
+    </div>
+
+    <p>
+        Aqui temos o início de um parágrafo <span style="background-color: seagreen;"> com um SPAN no meio</span> e o fim do parágrafo fora do SPAN
+    </p>
+    <!-- Como podemos perceber, a span ocupa somente o tamanho do conteúdo e não é possível de ajustar a largura e a altura, pois é um display: inline -->
+
+    <p style="background-color: blue;">
+        Aqui eu tenho o início de um parágrafo <div style="background-color: red;">uma div no meio</div> e o fim do parágrafo
+    </p>
+
+    <!-- Como podemos observar, não podemos colocar um elemento com display block (uma div ou um parágrafo, por exemplo) dentro de um parágrafo, pois isso quebra o fluxo do parágrafo -->
+
+    <p>
+        Aqui temos o início de um parágrafo <span style="background-color: green; display: inline-block; width: 300px; height: 25px;"> com uma span inline-block no meio</span> e o fim do parágrafo fora do SPAN
+    </p>
+
+    <!-- Como podemos observar, o span com inline-block continua permitindo o próximo conteúdo de ficar na mesmo linha mas agora é possivel alterar a largura e a altura dele -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+.quadrado{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.retangulo{
+    width: 130px;
+    height: 300px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    
+}
+
+
+.static{
+    position: static
+}
+
+.relative{
+    position: relative;
+    top: 40px
+}
+
+.fixed{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.absolute{
+    position:absolute;
+}
+
+.sticky{
+    position: sticky;
+    top: 5px;
+}
+
+.bg-red{
+    background-color: red;
+    
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-grey{
+    background-color: grey;
+}
+
+.bg-purple{
+    background-color: purple;
+    top: 40px;
+}
+
+/* O "position: static;" faz o elemento ficar na posição padrão do seu display. 
+    O "position: relative;" faz o elemento ficar na posição padrão do seu display, porém permitindo ser movido com as propriedades "top", "right", "bottom" ou "left". A posição é relativa a posição padrão do display
+    O "position: fixed; é o posicionamento em relação a janela, também possui as propriedades "top", "right", "bottom" ou "left" e sempre fica fixo em relação a janela, não importa o tamanho dela e se possui rolagem.
+    O "position: absolute" se posiciona em relação ao elemento pai, mas o elemento pai não pode ser static e também aceita as propriedades "top", "right", "bottom" ou "left".
+    O "position: sticky" se posiciona em relação a posição padrão do display, rola junto com a página mas não some dela, pois também fica posicionado em relação â janela e também possui as propriedades "top", "right", "bottom" ou "left".* No caso acima, o quadrado amarelo junto dos cinzas não pode ter um distância pro topo menor do que 5px*/
+    
