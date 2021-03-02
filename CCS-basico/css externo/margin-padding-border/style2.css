@@ -1,0 +1,25 @@
+#base{
+    height: 10px;
+    background-color: red;
+}
+#container{
+    background-color: blue;
+    height: 200px;
+    width: 200px;      
+}
+#conteudo{
+    color: white;
+    border: 5px solid yellow;    
+}
+.borda{
+    border-width: 5px;
+    border-style: solid;
+    border-color: indigo;
+    border-radius: 10px
+}
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: indianred;
+
+}

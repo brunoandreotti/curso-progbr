@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Zera o padding e margin de todo o documento */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+header{
+    background-color: rgb(48, 47, 48);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.container{
+    max-width: 1600px;
+    margin: auto;
+}
+/* Usado para criar os espaços em preto. O max-widith indica que somente apartir de 1000px de width que ele vai aparecer */
+
+.title{
+
+}
+
+section{
+    padding: 20px;
+    background-image: url(./imagens/biblioteca-média.jpg);
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+/* Por conta do "float: right" da div do formulário, a imagem de fundo não aparece inteira pois é como se não tivesse nada na section, para resolver isso, utilizei o "overflow: hidden". 
+É a section que contém a div que contém o formulário*/
+
+.form-container{
+    max-width: 230px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    float: right;
+    
+}
+
+.form-container p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-container h2{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.margin-b{
+    margin-bottom: 15px;
+}
+/* Essa classe foi feita pois o margin botton de 15px iria ser aplicada tanto no h2 quanto no p */
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+/* Como os inputs e a textarea teriam o mesmo tamanho, utilizei o seletor geral deles.
+Foi utilizado "box-sizing: border-box" ajustar o tamanho dos inputs e ficarem com o mesmo tamanho.
+O padding foi utilizado para deixar a caixa de texto um pouco maior.
+Quando tirou a border, os elementos grudaram, então foi utilizado "margin-botton" para dar um espaço entre eles. */
+
+input[type="submit"]{
+    color: white;
+    background-color: rgb(49, 179, 210);
+    font-weight: bold;
+
+}
+/* Esse seletor seleciona somente os iputs de "type=submit" */
+
+footer{
+    background-color: rgb(32, 33, 34);
+    padding: 40px;
+    text-align: center;
+    
+
+}
+
+.picture{
+    margin-bottom: 20px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+.discription{
+    color: white;
+    display: inline;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: center;
+    
+    
+}
+
+/* o "max-width" é em relação ao width do footer */
+
+.discription p, .discription h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    
+
+}
+
+    
+
+
+/* Esse seletores fazem solecionar somento os "p" e "h3" dentro da tag discription */
+
+@media screen and (max-width: 436px){
+    .form-container{
+        margin: auto;
+        float: none;
+    }
+
+    /* Tirei o float:right, para a div do formulario não ficar colada no lado direito e coloquei "margin: auto" para a div ficar sempre centralizada com 436px de largura da tela ou menos */
+
+    .discription{
+        max-width: 100%;
+        margin-right: 40px;
+        text-align: center;
+
+    }
+
+    .picture{
+        margin: auto;
+        display: block;
+    }
+}
+
+/* Coloquei "max-width" de 100% para  o texto poder 100% do espaço e margin-right de 40px para alinhar o texto com a imagem */
+

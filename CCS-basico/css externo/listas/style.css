@@ -1,0 +1,33 @@
+ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 0;
+    padding: 10px;
+    background-color: #f3e;
+}
+
+ol{
+    list-style-type: lower-alpha;
+    margin: 0;
+    padding: 10px;
+    list-style-position: inside;
+    background-color: #59e;
+}
+/* O estilo some se o padding estiver 0 e o list-style-position não estiver inside */
+
+li{
+    border: 1px solid;
+    background-color:grey;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;  
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+a:hover{
+    color: white;
+}

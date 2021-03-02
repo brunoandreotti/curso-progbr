@@ -1,0 +1,47 @@
+ body{
+    padding: 0;
+     margin: 0;
+ }
+
+ .conteiner{
+     background-color: red;
+     padding: 5px;
+     border: 5px solid blue;
+     margin: 10px;
+ }
+
+
+ .conteudo{
+     background-color: lightgray;
+     border: 5px solid green;
+     padding: 5px
+ }
+
+ .quadrado{
+     width: 100px;
+     height: 100px;
+     background-color: rosybrown;
+     padding: 5px;
+     border: 5px solid;
+     
+
+ }
+ .quadrado2{
+     width: 120px;
+     height: 120px;
+     background-color: lawngreen;
+ }
+ 
+ /*Todo o border e padding adiciona tamanho, um quadrado com tamamho de 100px e uma border e padding de 5px, irá medir 120px (5px border|5px padding|100px quadrado|5px padding|5px border)*/
+ /*Para manter o tamanho de 100px mesmo com o padding e o border, teria que usar box-sizing: border-box;*/
+
+ .quadrado3{
+    width: 100px;
+    height: 100px;
+    background-color: rosybrown;
+    padding: 5px;
+    border: 5px solid;
+    box-sizing: border-box;
+    /*Nesse caso o quadrado, o padding e o border ficaram dentro dos 100px*/   
+
+}

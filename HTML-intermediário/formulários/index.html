@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <form method="GET" action="https://www.youtube.com/results">
+
+       <p>E-mail <input type="text" name="usuario" la></p>
+       <p>Senha <input type="password"></p>
+        
+        
+        <input type="checkbox" name="materia" value="op1"> Biologia <br>
+        <input type="checkbox" name="materia" value="op2"> Química <br>
+        <input type="checkbox" name="materia" value="op3"> Física <br>
+
+        <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo">Feminino
+        <input type="radio" name="sexo">Não informar
+        <input type="radio" name="gender">Xxxx
+        <!-- Obs: para que permita selecionar apenas uma opção, é necessario possuirem o mesmo "name", se o "name" for diferente será possivel selecionar os opçãoes com "name" diferente -->
+        <input type="submit">
+        <input type="reset" value="Limpar"> <br>
+        <!-- "Value" muda o que está escrito no botão. -->
+
+        <select name="estados" id="1">
+            <option value="RJ">Riode janeiro</option>
+            <option value="SP">São Paulo</option>
+            <option value="MG" selected>Minas Gerais</option>
+        </select> <br>
+
+        Entre em contato conosco! <br>
+        <input type="email" name="email" value="Seu e-mail"> <br>
+        <textarea name="mensagem" id="" cols="23" rows="5">Escreva sua mensagem aqui! :)</textarea> <br>
+        <input type="submit" value="Enviar mensagem!">
+        <input type="reset" value="Limpar"> <br>
+
+        <!-- Elementos novos do HTML5 -->
+
+        <input type="color" name="cor"> <br>
+        <!-- Obs: Não possui boa compatibilidade com Safari -->
+
+        <input type="date" name="data" max="2021-12-31"> <br>
+
+        <input type="file" name="arquivo"> <br>
+        <!-- Obs: O tipo de method para enviar arquivos precisa ser POST -->
+
+        <input type="number" name="numerico" min="1" max="10"> Númerico <br>
+
+        <input type="range" min="1" max="10" value="5"> <br>
+
+        <input type="tel" name="telefone" value="Número de celular"> <br>
+
+        <input type="email" name="email" value="Seu e-mail">
+
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

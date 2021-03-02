@@ -1,0 +1,31 @@
+#i1{
+    float: left;
+}
+
+#i2{
+    float: right;
+}
+
+p{
+    text-align: center;
+    clear: none;
+    
+}
+
+div{
+    border: 1px solid black;
+    overflow: auto;
+}
+
+ul{
+    list-style-type: none;
+    float: right;
+   
+}
+
+li{
+    float: right;
+    padding: 10px;
+    background-color: grey;
+    margin: 10px;
+}
