@@ -1,8 +1,8 @@
 // alert("Bom dia, Bruno")
 
-// var nome = prompt("Qual seu nome?")
+var nome = prompt("Qual seu nome?")
 
-// alert("Bom dia, " + nome)
+alert("Boa noite, " + nome)
 
 // var numero = prompt("Digite um número")
 // var dobro = parseInt(numero) + parseInt(numero)
