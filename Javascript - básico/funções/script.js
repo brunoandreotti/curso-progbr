@@ -17,39 +17,54 @@
 
 // Nome do aluno - nota 1 - nota 2 - média - aprovado/reprovado
 
-var nomes = ["Bruno", "Maria", "João"]
-var notasA =[8.0, 7.0, 8.5]
-var notasB = [6.0, 6.5, 10.0]
+// var alunos = ["Bruno", "João", "Maria"]
+// var resultadoProva1 = [8.5, 7.5, 6.0]
+// var resultadoProva2 = [7.0, 6.5, 8.0]
 
-function funcmedia(n1, n2) {
-    return (n1 + n2)/2
+// function mediaEscolar (n1, n2) {
+//     return (n1 + n2) / 2
+// }
+
+// function aprovadoReprovado(mediaEscolar) {
+//     if (mediaEscolar >= 7) {
+//         return "Aprovado"
+//     } else {
+//         return "Reprovado"
+//     }
+// }
+
+// for (var index in alunos) {
+//     listaAlunos = alunos[index]
+//     notasProva1 = resultadoProva1[index]
+//     notasProva2 = resultadoProva2[index]
+//     mediaFinal = mediaEscolar(notasProva1, notasProva2)
+
+//     console.log(listaAlunos, " - ", notasProva1, " - ", notasProva2, " - ", mediaFinal, "- ", aprovadoReprovado(mediaFinal))
+// }
+
+// Nome do aluno - nota 1 - nota 2 - média - aprovado/reprovado
+
+var alunos = ["Bruno", "João", "Maria"]
+var resultadoP1 = [7.0, 6.5, 4]
+var resultadoP2 = [4.0, 8.5, 9.0]
+
+function mediaProvas (notaP1, notaP2) {
+    return (notaP1 + notaP2) / 2
 }
 
-function passou(m) {
-    if (m >= 7) {
+function aprovadoReprovado (mediaProvas) {
+    if (mediaProvas >= 6) {
         return "Aprovado"
     } else {
         return "Reprovado"
     }
-
-    
 }
 
-for (var index in nomes) {
+for (var index in alunos) {
+    nomeAlunos = alunos[index]
+    notasP1 = resultadoP1[index]
+    notasP2 = resultadoP2[index]
+    mediaFinal = mediaProvas(notasP1, notasP2)
 
-    var notas1 = notasA[index];
-    var notas2 = notasB[index];
-    var media = funcmedia(notas1, notas2)
-
-
-    console.log(nomes[index]+ 
-                " - " +
-                notas1 +
-                " - " +
-                notas2 + 
-                " - "+
-                media +
-                " - "+
-                passou(media));
-
+    console.log(nomeAlunos, "-", notasP1, "-", notasP2, "-", mediaFinal, "-", aprovadoReprovado(mediaFinal) )
 }
